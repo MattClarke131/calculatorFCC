@@ -14,3 +14,13 @@ body {
     font-size: 2em;
     margin-top: 0em;
 }
+
+#screen {
+  width: 27em;
+  height: 7em;
+}
+
+#screenText {
+  font-size: 4em;
+  text-align: right;
+}
