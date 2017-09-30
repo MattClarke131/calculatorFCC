@@ -24,3 +24,28 @@ body {
   font-size: 4em;
   text-align: right;
 }
+
+#buttons {
+  text-align: center;
+}
+
+.btn {
+  color:black;
+  background-color: #CFC;
+  width: 6em;
+  height: 4em;
+  border-color:black;
+  margin-top:1em;
+}
+
+#buttonClear {
+  width: 12em;
+}
+
+#button0 {
+  width:12em;
+}
+
+#buttonEquals {
+  width:12em;
+}
