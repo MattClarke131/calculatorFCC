@@ -1,9 +1,9 @@
 body {
-    background-color: #FA8072;
+    background-color: #eeb4b4;
 }
 
 #calcBox {
-  background-color: #c6e2ff;
+  background-color: #fa8072;
   margin-top: 5em;
   width: 30em;
   height: 40em;
@@ -31,7 +31,7 @@ body {
 
 .btn {
   color:black;
-  background-color: #CFC;
+  background-color: #c1ebdd;
   width: 6em;
   height: 4em;
   border-color:black;
