@@ -18,3 +18,10 @@ var numberPress = function(number) {
     updateHTML(screenQueue);
   }
 }
+
+var decimalPress = function() {
+  if(screenQueue.indexOf('.') == -1) {
+    screenQueue = screenQueue.concat('.');
+    updateHTML(screenQueue);
+  }
+}
