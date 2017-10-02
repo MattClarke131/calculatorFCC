@@ -35,7 +35,12 @@ var operationPress = function(operation) {
     return;
   }
   if(currentOperation != "") {
-    //calculate value, then do stuff
+    screenQueue = calculate(Number(numberMemory), Number(screenQueue),currentOperation).toString();
+    updateHTML();
+    numberMemory = screenQueue;
+    screenQueue = "";
+    currentOperation = operation;
+
   } else {
     currentOperation = operation;
     numberMemory = screenQueue;
