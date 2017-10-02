@@ -31,7 +31,7 @@ var decimalPress = function() {
 }
 
 var operationPress = function(operation) {
-  if(screenQueue == "") {
+  if(screenQueue == "" || screenQueue == ".") {
     return;
   }
   if(currentOperation != "") {
@@ -73,7 +73,7 @@ var calculate = function(arg1, arg2, operation) {
 }
 
 var equalsPress = function() {
-  if(currentOperation == "" || screenQueue == "" || numberMemory == "") {
+  if(currentOperation == "" || screenQueue == "" || numberMemory == "" || screenQueue == ".") {
     return;
   } else {
 
