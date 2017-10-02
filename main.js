@@ -42,3 +42,42 @@ var operationPress = function(operation) {
     screenQueue = "";
   }
 }
+
+var calculate = function(arg1, arg2, operation) {
+  var result = 0;
+  switch(operation) {
+    case "addition":
+      result =  arg1 + arg2;
+      break;
+    case 'multiplication':
+      result = arg1 * arg2;
+      break;
+    case 'subtraction':
+      result = arg1 - arg2;
+      break;
+    case 'division':
+      if(arg2 == 0) {
+        result = "Stop That";
+      } else {
+        result = arg1 / arg2;
+        result = result.toString().slice(0,maxScreenLength);
+      }
+      break;
+  }
+  return result;
+}
+
+var equalsPress = function() {
+  if(currentOperation == "" || screenQueue == "" || numberMemory == "") {
+    return;
+  } else {
+
+    screenQueue = calculate(Number(numberMemory), Number(screenQueue), currentOperation)
+    screenQueue = screenQueue.toString();
+
+    numberMemory = "";
+    currentOperation == "";
+    updateHTML();
+    screenQueue = "";
+  }
+}
