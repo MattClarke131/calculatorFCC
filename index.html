@@ -24,22 +24,22 @@ front end development project
       <div id="buttons">
         <div class="btn-group">
           <button id="buttonClear" class="btn" onclick="clearScreen()"> Clear </button>
-          <button id="buttonDivide" class="btn"> &#247; </button>
-          <button id="buttonMultiply" class="btn"> x </button>
+          <button id="buttonDivide" class="btn" onclick="operationPress('division')"> &#247; </button>
+          <button id="buttonMultiply" class="btn" onclick="operationPress('multiplication')"> x </button>
         </div>
         <br>
         <div class="btn-group">
           <button id="button7" class="btn" onclick="numberPress(7)"> 7 </button>
           <button id="button8" class="btn" onclick="numberPress(8)"> 8 </button>
           <button id="button9" class="btn" onclick="numberPress(9)"> 9 </button>
-          <button id="buttonMinus" class="btn"> - </button>
+          <button id="buttonMinus" class="btn" onclick="operationPress('subtraction')"> - </button>
         </div>
         <br>
         <div class="btn-group">
           <button id="button4" class="btn" onclick="numberPress(4)"> 4 </button>
           <button id="button5" class="btn" onclick="numberPress(5)"> 5 </button>
           <button id="button6" class="btn" onclick="numberPress(6)"> 6 </button>
-          <button id="buttonPlus" class="btn"> + </button>
+          <button id="buttonPlus" class="btn" onclick="operationPress('addition')"> + </button>
         </div>
         <br>
         <div class="btn-group">

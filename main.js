@@ -1,7 +1,9 @@
 // main.js
 
+var maxScreenLength = 10;
 var screenQueue = "";
-var maxScreenLength = 100;
+var currentOperation = "";
+var numberMemory = "";
 
 var updateHTML = function() {
   document.getElementById("screenText").innerHTML = screenQueue;
@@ -9,6 +11,8 @@ var updateHTML = function() {
 
 var clearScreen = function() {
   screenQueue = "";
+  currentOperation = "";
+  numberMemory = "";
   updateHTML();
 };
 
@@ -23,5 +27,18 @@ var decimalPress = function() {
   if(screenQueue.indexOf('.') == -1) {
     screenQueue = screenQueue.concat('.');
     updateHTML();
+  }
+}
+
+var operationPress = function(operation) {
+  if(screenQueue == "") {
+    return;
+  }
+  if(currentOperation != "") {
+    //calculate value, then do stuff
+  } else {
+    currentOperation = operation;
+    numberMemory = screenQueue;
+    screenQueue = "";
   }
 }
