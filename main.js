@@ -8,6 +8,7 @@ var updateHTML = function(newContents) {
 };
 
 var clearScreen = function() {
+  screenQueue = "";
   updateHTML('');
 };
 
