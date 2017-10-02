@@ -3,25 +3,25 @@
 var screenQueue = "";
 var maxScreenLength = 100;
 
-var updateHTML = function(newContents) {
-  document.getElementById("screenText").innerHTML = newContents;
+var updateHTML = function() {
+  document.getElementById("screenText").innerHTML = screenQueue;
 };
 
 var clearScreen = function() {
   screenQueue = "";
-  updateHTML('');
+  updateHTML();
 };
 
 var numberPress = function(number) {
   if(screenQueue.length <= maxScreenLength) {
     screenQueue = screenQueue.concat(number.toString());
-    updateHTML(screenQueue);
+    updateHTML();
   }
 }
 
 var decimalPress = function() {
   if(screenQueue.indexOf('.') == -1) {
     screenQueue = screenQueue.concat('.');
-    updateHTML(screenQueue);
+    updateHTML();
   }
 }
