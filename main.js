@@ -65,15 +65,22 @@ var calculate = function(arg1, arg2, operation) {
         result = "Stop That";
       } else {
         result = arg1 / arg2;
-        result = result.toString().slice(0,maxScreenLength);
       }
       break;
   }
+  result = result.toString().slice(0,maxScreenLength);
   return result;
 }
 
+var emptyCalculation = function () {
+  return currentOperation == ""
+      || screenQueue == ""
+      || numberMemory == ""
+      || screenQueue == ".";
+}
+
 var equalsPress = function() {
-  if(currentOperation == "" || screenQueue == "" || numberMemory == "" || screenQueue == ".") {
+  if (emptyCalculation()) {
     return;
   } else {
 
