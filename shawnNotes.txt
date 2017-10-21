@@ -1,0 +1,19 @@
+Shawn Notes!
+
+1. Try object oriented programming
+  1.1 Every function should be a method of a calculator object
+  1.2 Test this by having multiple calculators on one page.
+  1.3 Put the calculator class into a different file
+  1.4 Write a test script for the calculator class
+  1.5 The Calculator Class would not care about rendering results.
+      It would only produce results.
+      "Separation of concerns"
+2. Separating concerns with functions
+  2.1 calculate() function should not do the truncating
+3. Try to get number keys to work
+4. If you're adding custom attributes, it's a good convention is to use
+  "data-" and then whatever your custom attribute is.
+  4.1. HTML5 has left data- for custom attributes.
+  4.2 Here's how to access these custom attributes:
+      ?? maybe: element.attr("data-number")
+      with jQuery: el.data("number")
